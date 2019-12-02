@@ -4,12 +4,12 @@ import tz, {format} from 'date-fns-tz';
 const localTime = '2019-11-22 01:02:03';
 console.log('localTime', localTime);
 
-const utcTime = tz.zonedTimeToUtc(localTime, 'Asia/Shanghai')
+const utcTime = tz.zonedTimeToUtc(localTime, 'Asia/Shanghai');
 console.log('utcTime', utcTime);
 
-// const zonedTime = tz.utcToZonedTime(utcTime, 'America/New_York', {})
-// console.log('zonedTime', zonedTime);
+const zonedTime = tz.utcToZonedTime(utcTime, 'America/New_York');
+console.log('zonedTime', zonedTime);
 
-const pattern = 'yyyy-MM-dd HH:mm:ss'
-const output = format(utcTime, pattern, {timeZone: 'America/New_York'})
-console.log('output', output);
+const pattern = 'yyyy-MM-dd HH:mm:ss';
+console.log(format(zonedTime, pattern));
+console.log(format(utcTime, pattern));

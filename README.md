@@ -20,10 +20,8 @@ ISO 8601规定了日期与时间的表示法。
 
 我们可以使用`date-fns-tz`将本地时间与UTC时间进行转换。
 
-### 问题：
-
-有一些函数，比如`utcToZonedTime`不知道有什么用，转不转好像都无影响。
-
+注意：
+- `format`的第3个参数中的`timeZone`好像有问题，不论写什么，结果都是一样的，不起作用
 
 - https://zh.wikipedia.org/wiki/ISO_8601
 
