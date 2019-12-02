@@ -1,6 +1,8 @@
 TypeScript "date-fns-tz" Demo
 ===========================
 
+注意：这个库`date-fns-tz`有很多bug，谨慎使用。
+
 ISO 8601规定了日期与时间的表示法。
 
 常见用于表示UTC的格式有：
